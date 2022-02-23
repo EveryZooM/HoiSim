@@ -1,6 +1,6 @@
-package by.Yukho;
+package by.Yukho.entity;
 
-public class Division {
+public class Division extends Entity {
     private String battalionType;
     private float speed;
     private float organization;
@@ -8,8 +8,10 @@ public class Division {
     private float softAttack;
     private float defence;
     private float breakthrough;
+
     public Division() {
     }
+
     public Division(String battalionType, float speed, float organization, float recoveryRate, float softAttack, float defence, float breakthrough) {
         this.battalionType = battalionType;
         this.speed = speed;
@@ -63,7 +65,7 @@ public class Division {
     }
     public String toString() {
         final StringBuilder sb = new StringBuilder("Division{");
-        sb.append("battalionType=").append(battalionType)
+        sb.append("battalionType=").append(battalionType);
         return sb.toString();
     }
 }
